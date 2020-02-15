@@ -25,8 +25,13 @@
         <img src="images/git_status.PNG" alt="git_status" style="margin-top:30px"><br><br>
         마지막으로 <a style="color:coral">git remote add origin</a> 을 사용해서 아래와 같이 경로를 추가하는 것으로 Local PC에서 작업하는 것이 Remote Repository와 연결되도록 한다.<br>
         <img src="images/git_remote.PNG" alt="git_remote" style="margin-top:30px"><br><br>
-        이상으로 commit을 확인 후 내용을 추가 업로드 하겠습니다.<br>
-        <p style="font-size: smaller;color: darkgray; text-align:right">to be continued.......</p> <br><br><br>
-        Change correct?
+        Remote Repository에 올라와 있는 파일을 원격으로 수정한다고 해보자.<br>
+        그러면 자신의 Local PC 에서 수정했으면 먼저 <a style="color:coral">git add</a>의 명령어를 사용해서 stage area에 넣어준다.<br?>
+        해당 경로에서 모든 파일을 업로드를 원하면 <a style="color:coral">git add .</a> 로 하고 특정 파일이면 . 대신 파일명과 확장자를(ex:LocalTest.html) 을 쓰면 된다.
+        이때 Stage area는 commit을 git reposritory에 하기 전에 대기하는 공간이라고 생각하면 된다.<br>
+        <img src="images/git_add_result.PNG" alt="git_status" style="margin-top:30px"><br><br>
+        위의 그림과 같이 git add 를 하고 난 후 git status 로 현재 상태를 확인하면 초록색으로 testLoca.html이 수정되었다고 표시된 것을 볼 수 있다. git add 가 되어있지 않으면 빨간색으로 표시되어 있어서 commit 할 수가 없는 점을 유의하자.<br>
+        수정을 완료하고 <a style="color:coral">git commit -m "[commit 요약 내용]"</a>의 명령어를 입력한 후 git에 가서 변경된 내용을 확인하며 완료!<br><br><br>
+
     </body>
 </html>
